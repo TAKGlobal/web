@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ConTAKtanos</title>
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/form.css">
+        <link rel="shortcut icon" href="./img/TAK Logo Symbol.png" type="img/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/estilos.css">
+
+        <!-- Style of the plugin -->
+        <link rel="stylesheet" href="plugin/components/Font Awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
+       
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    </head>
+    <boby>
+
+ <!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=3177954248&text=Hola,%20en%20que%20puedo%20ayudarte?" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a> -->
+
+        <header class="hero">
+
+            <nav class="nav container">
+                <div class="nav_logo">
+                    <img src="./img/TAK Main Logo.png" height="60" alt="Tech and Knowledge">
+                </div>
+    
+                <!-- Menú para móviles -->
+                <div class="nav_menu" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+    
+                <ul class="nav_link" id="navMenu">
+                    <li class="nav_items"><a href="index.html" class="nav_links">Home</a></li>
+                    <li class="nav_items"><a href="contacto.html" class="nav_links">Contáctanos</a></li>
+                    <li class="nav_items"><a href="servicios.html" class="nav_links">Servicios</a></li>
+                    <li class="nav_items"><a href="recursos.html" class="nav_links">Recursos</a></li>
+                    <li class="nav_items"><a href="soporte.html" class="nav_links">Soporte</a></li>
+                    <li class="nav_items"><a href="industrias.html" class="nav_links">Sectores</a></li>
+                    <li class="nav_items"><a href="compañia.html" class="nav_links">Compañía</a></li>
+                    <li class="nav_close" id="navClose"><i class="fas fa-times"></i></li>
+                </ul>
+            </nav>
+    
+        </header>
+
+        <div class="container-form">
+            <div class="info-form">
+                <h2>¿Preguntas? Estamos aquí para ayudar.</h2>
+                <p>Nuestros representantes están listos para asesorarte y trazar el rumbo hacia el 
+                    éxito. Pueden responder todas tus preguntas relacionadas con Tech and Knowledge, 
+                    incluidos algunos temas como:</p>
+                <a href="#"><i class="fa fa-phone"></i>+57 301 3171264</a>
+                <a href="#"><i class="fa fa-envelope"></i>contactanos@takcolombia.com.co</a>
+                <a href="#"><i class="fa fa-map-marked"></i>Para cualquier denuncia puedes contactarnos a traves del formulario o del siguiente correo</a>
+                <a href="#"><i class="fa fa-envelope"></i>canaldedenuncias@takcolombia.com.co</a>
+                <a href="#"><i class="fa fa-map-marked"></i>Bogotá, Colombia</a>
+                
+                <br><br>
+                <div>
+                <img src="./img/viewprincipal.png" alt="Tecnología y conocimiento o Tech and Knowledge">
+                </div>
+
+            </div>
+            
+            <form action="#" class="formulario" id="formulario">
+       
+                <!-- GRUPO DE NOMBRE-->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <!--<label class="formulario__label">Nombre</label>-->
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre" >
+                        <span></span>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre admite letras</p>
+                </div>
+                <div class="formulario__grupo" id="grupo__apellido">
+                    <!--<label class="formulario__label">Apellido</label>-->
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
+                        <span></span>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El apellido admite letras</p>
+                </div>
+                <div class="formulario__grupo" id="grupo__cargo">
+                    <!--<label class="formulario__label">Cargo</label>-->
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="cargo" id="cargo" placeholder="Cargo">
+                        <span></span>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El cargo admite letras y numeros</p>
+                </div>
+                <!-- GRUPO DE EMAIL -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <!--<label class="formulario__label">Correo Electonico</label>-->
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@dominio.com">
+                        <span></span>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo admite n meros, letras y gui n bajo.</p>
+                </div>
+        
+                <!-- GRUPO DE TEL FONO -->
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <!--<label class="formulario__label">Tel fono</label>-->
+                    <div class="formulario__grupo-input">
+                        <input type="telefono" class="formulario__input" name="telefono" id="telefono" placeholder="Numero del contacto">
+                        <span></span>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El n mero admite max 10 digitos</p>
+                </div>
+        
+                <div class="formulario__grupo" id="grupo__empresa">
+                    <!--<label class="formulario__label">Empresa</label>-->
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="empresa" id="empresa" placeholder="Empresa">
+                        <span></span>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La empresa admite n meros, letras y gui n bajo.</p>
+                </div>
+                <div class="formulario__grupo" id="grupo__pais">
+                    <!--<label class="formulario__label">Pa s</label>-->
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="pais" id="pais" placeholder="Pais">
+                        <span></span>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El pa s admite letras</p>
+                </div>
+                <div class="formulario__grupo" id="grupo__ciudad">
+                    <!--<label class="formulario__label">Ciudad</label>-->
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="ciudad" id="ciudad" placeholder="Ciudad">
+                        <span></span>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El la ciudad admite letras</p>
+                </div>
+        
+                <div class="formulario__grupo" id="grupo__mensaje">
+                    <!--<label class="formulario__label">Mensaje</label>-->
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="mensaje" id="mensaje" placeholder="Mensaje">
+                        <span></span>
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo admite n meros, letras y gui n bajo</p>
+                </div>
+        
+                <!-- GRUPO TERMINOS Y CONDICIONES -->
+                <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                        <span></span>
+                        <b class="formulario__span"><a target="_blank" href="pdf/POLITICA DE SEGURIDAD Y PROVACIDAD DE LA INFORMACIÓN.pdf"><font size="3">Acepto los terminos y condiciones</font></a></b>
+                    </label>
+                </div>
+                
+                <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+                </div>
+        
+                <!-- RECAPCHAT -->
+                <div class="g-recaptcha" data-sitekey="6LfnheUqAAAAACr8Dcak8Q_Qv12VrpeJgH8b_PYA" data-callback="recaptchaCallback"  data-expired-callback="recaptchaExpiredCallback"></div>
+        
+                <!-- GRUPO ENVIAR -->
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado correctamente</p>
+                    <input class="formulario__btn" type="submit" value="Entrar en Contacto" id="button" disabled>
+                </div>
+            </form>
+            <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+            emailjs.init('T34vofnd55YbN6ws6')
+            </script>
+            
+        </div>
+    
+
+        <section class= "questions container">
+            <h2 class="subtitle">¡Cuéntanos qué necesitas y hagámoslo realidad!</h2>
+            <p class="questions_paragraph">En Tech and Knowledge SAS, entendemos que cada negocio tiene necesidades únicas. Por eso, te escuchamos, analizamos tu requerimiento y diseñamos la solución tecnológica ideal para ti.</p>
+    
+            <br>
+                <section class="questions_offer">
+                    <h2 class="subtitle">Nos cuentas tu necesidad y nosotros nos ocupamos del resto</h2>
+                    <p class="questions_copy">Más que un proveedor, somos tu aliado estratégico en tecnología. Nos encargamos de entender tus desafíos y brindarte una solución confiable, escalable y segura. Juntos, convertimos ideas en resultados </p>
+                    <br>
+                    <a href="#" class="cta">Preguntanos</a>
+                </section>
+    
+        </section>
+    
+    
+    <footer class="footer2">
+    <section class="footer_container container">
+    <div class="containerF">
+        <div class="col1">
+            <a href="#" class="brand">Tech and Knowledge</a>
+            <ul class="media-icons">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col2">
+            <ul class="menu1">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Contácto</a>
+                </li>
+                <li>
+                    <a href="#">Servicios</a>
+                </li>
+                <li>
+                    <a href="#">Recursos</a>
+                </li>
+                <li>
+                    <a href="#">Soporte</a>
+                </li>
+                <li>
+                    <a href="#">Compañía</a>
+                </li>
+            </ul>
+            <p>
+                Somos TAK, tu socio estratégico en servicios tecnológicos a nivel global, creando soluciones que definen el futuro del éxito de tu negocio."
+            </p>
+        </div>
+        <div class="col3">
+            <p>Subscribete a nuestro newsletter</p>
+            <form>
+                <div class="input-wrap">
+                    <input 
+                        type="email"
+                        placeholder="ejemplotak@gmail.com"
+                    />
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>    
+                </div>
+            </form>
+            <ul class="service-icons">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-cc-amazon-pay"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-cc-mastercard"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-cc-stripe"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-cc-visa"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section>
+</footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    
+    <!-- Button Whatsapp Structure -->
+<div class="whatsapp_chat_support wcs_fixed_right" id="button-w">
+    <div class="wcs_button_label">
+            Contáctanos
+        </div>  
+    <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+    </div>  
+ 
+    <div class="wcs_popup">
+        <div class="wcs_popup_close">
+            <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+            <span class="fa fa-whatsapp"></span>
+            <strong>Servicio al cliente</strong>
+            
+            <div class="wcs_popup_header_description">Somos TAK Tech and Knowledge SAS, Cuentanos ¿En que podemos ayudarte? Chatea con nosotros en Whatsapp</div>
+
+        </div>  
+        <div class="wcs_popup_input" 
+            data-number="573013171264"
+            data-availability='{ "monday":"07:00-22:30", "tuesday":"07:00-22:30", "wednesday":"07:7030-22:30", "thursday":"07:00-22:30", "friday":"07:00-22:30", "saturday":"09:00-18:30", "sunday":"09:00-22:30" }'>
+            <input type="text" placeholder="Escribenos tus preguntas!" />
+            <i class="fa fa-play"></i>
+        </div>
+        <div class="wcs_popup_avatar">
+            <img src="./img/ceo.jpeg" alt="">
+        </div>
+    </div>
+</div>
+
+
+    <!-- jQuery 1.8+ -->
+<script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
+    <!-- Plugin JS file -->
+<script src="plugin/components/moment/moment.min.js"></script>
+<script src="plugin/components/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+<script src="plugin/whatsapp-chat-support.js"></script>
+<script>
+   $('#button-w').whatsappChatSupport({
+        defaultMsg : '',
+    });
+</script>
+
+<script>
+    document.getElementById("navToggle").addEventListener("click", function() {
+        document.getElementById("navMenu").classList.add("show");
+    });
+
+    document.getElementById("navClose").addEventListener("click", function() {
+        document.getElementById("navMenu").classList.remove("show");
+    });
+</script>
+    </body>
+    <script>
+        const btn = document.getElementById('button');
+
+document.getElementById('formulario')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_l7vbn5j';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Entrar en Contacto';
+      //alert('Sent!');
+    }, (err) => {
+      btn.value = 'Entrar en Contacto';
+      //alert(JSON.stringify(err));
+    });
+});
+    </script>
+    <script src="./js/script.js"></script>
+</html>
